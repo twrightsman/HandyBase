@@ -1,0 +1,7 @@
+data/io.github.twrightsman.HandyBase.desktop.in
+data/io.github.twrightsman.HandyBase.appdata.xml.in
+data/io.github.twrightsman.HandyBase.gschema.xml
+data/ui/Window.ui
+src/main.py
+src/window.py
+

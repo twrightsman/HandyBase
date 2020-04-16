@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=HandyBase
+Comment=Foundation for new adaptive GNOME apps
+Exec=handybase
+Icon=io.github.twrightsman.HandyBase
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true

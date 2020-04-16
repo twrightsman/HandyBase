@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/io/github/twrightsman/HandyBase">
+    <file>style/handybase.css</file>
+    <file preprocess="xml-stripblanks">ui/window.ui</file>
+  </gresource>
+</gresources>
