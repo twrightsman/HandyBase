@@ -20,8 +20,9 @@ from typing import List
 import gi
 
 gi.require_version("Gtk", "3.0")
+gi.require_version("Handy", "1")
 
-from gi.repository import Gtk, Gio, Gdk
+from gi.repository import Gtk, Gio, Gdk, Handy
 
 from .window import HandyBaseWindow
 
@@ -41,6 +42,10 @@ class HandyBase(Gtk.Application):
             default_css,
             Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION,
         )
+
+    def do_startup(self):
+        Gtk.Application.do_startup(self)
+        Handy.init()
 
     def do_activate(self):
         win = self.props.active_window

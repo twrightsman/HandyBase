@@ -30,12 +30,13 @@ sudo apt install flatpak qemu-system-x86
 All of these steps were taken from the excellent [Librem 5 Developer Documentation](https://developer.puri.sm/Librem5/index.html).
 
 ```
-flatpak-builder --repo=handybase _flatpak HandyBase/io.github.twrightsman.HandyBase.json
-flatpak build-bundle handybase handybase.flatpak io.github.twrightsman.HandyBase
+cd HandyBase
+flatpak-builder --repo=build/handybase build/_flatpak io.github.twrightsman.HandyBase.json
+flatpak build-bundle build/handybase build/handybase.flatpak io.github.twrightsman.HandyBase
 ```
 
 ## Test the Flatpak
-`flatpak-builder --run _flatpak HandyBase/io.github.twrightsman.HandyBase.json handybase`
+`flatpak-builder --run build/_flatpak io.github.twrightsman.HandyBase.json handybase`
 
 ## Download Librem 5 x86\_64 image
 
